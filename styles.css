@@ -70,8 +70,8 @@ body, html {
     background: linear-gradient(90deg, rgb(172, 181, 197), rgb(150, 180, 230), rgb(200, 230, 255), #fff);
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 200% 200%; /* Increase the background size for a faster effect */
-    animation: gradient-shift 2s linear infinite; /* Faster gradient shift */
+    background-size: 200% 200%; 
+    animation: gradient-shift 2s linear infinite; 
 }
 
 .sub-title {
@@ -80,8 +80,8 @@ body, html {
     background: linear-gradient(90deg, rgb(172, 181, 197), rgb(150, 180, 230), rgb(200, 230, 255), #fff);
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 200% 200%; /* Increase the background size for a faster effect */
-    animation: gradient-shift 2s linear infinite; /* Faster gradient shift */
+    background-size: 200% 200%;
+    animation: gradient-shift 2s linear infinite; 
     margin-top: 20px;
 }
 
@@ -91,6 +91,6 @@ body, html {
         background-position: 0% 50%;
     }
     100% {
-        background-position: 200% 50%; /* Moves the gradient quickly */
+        background-position: 200% 50%;
     }
 }
