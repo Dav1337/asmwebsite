@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #070707;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-page-button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    width: 15ch;
+    animation: typing 2s steps(14, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 15ch;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#assembly-screen {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 4rem;
+    color: transparent;
+    background: linear-gradient(90deg, rgb(172, 181, 197), rgb(150, 180, 230), rgb(200, 230, 255), #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% 200%; /* Increase the background size for a faster effect */
+    animation: gradient-shift 2s linear infinite; /* Faster gradient shift */
+}
+
+.sub-title {
+    font-size: 3rem;
+    color: transparent;
+    background: linear-gradient(90deg, rgb(172, 181, 197), rgb(150, 180, 230), rgb(200, 230, 255), #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% 200%; /* Increase the background size for a faster effect */
+    animation: gradient-shift 2s linear infinite; /* Faster gradient shift */
+    margin-top: 20px;
+}
+
+/* Gradient animation */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%; /* Moves the gradient quickly */
+    }
+}
